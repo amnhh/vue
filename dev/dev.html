@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./../dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input
+        type="text"
+        v-model="text"
+    >
+    <p>{{ text }}</p>
+</div>
+<script>
+    new Vue({
+      el : '#app',
+      data : function () {
+        return {
+          text : ''
+        }
+      }
+    })
+</script>
+</body>
+</html>
